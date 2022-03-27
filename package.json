@@ -1,6 +1,14 @@
 {
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "live-server": "^1.2.1",
+    "nodemon": "^2.0.15",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
   },
   "name": "e-commerce",
   "version": "1.0.0",
@@ -154,7 +162,7 @@
     "websocket-extensions": "^0.1.4"
   },
   "scripts": {
-    "start": "node backend/server.js",
+    "start": "nodemon --watch backend --exec ./node_modules/.bin/babel-node backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
