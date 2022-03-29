@@ -2,7 +2,7 @@ export default {
     products: [
         {
             _id: '1',
-            name: 'Lorem ipsum dolor sit amet.',
+            name: 'Lorem ipsum dolor sit amet. product_1',
             catagory: 'lorem',
             image: '/images/product-1.jpg',
             price: 14,
@@ -13,7 +13,7 @@ export default {
         },
         {
             _id: '2',
-            name: 'Lorem ipsum dolor sit amet.',
+            name: 'Lorem ipsum dolor sit amet.product_2',
             catagory: 'lorem',
             image: '/images/product-2.jpg',
             price: 134,
@@ -24,7 +24,7 @@ export default {
         },
         {
             _id: '3',
-            name: 'Lorem ipsum dolor sit amet.',
+            name: 'Lorem ipsum dolor sit amet.product_3',
             catagory: 'lorem',
             image: '/images/product-3.jpg',
             price: 4,
@@ -35,7 +35,7 @@ export default {
         },
         {
             _id: '4',
-            name: 'Lorem ipsum dolor sit amet.',
+            name: 'Lorem ipsum dolor sit amet.product_4',
             catagory: 'lorem',
             image: '/images/product-4.jpg',
             price: 14,
@@ -46,7 +46,7 @@ export default {
         },
         {
             _id: '5',
-            name: 'Lorem ipsum dolor sit amet.',
+            name: 'Lorem ipsum dolor sit amet.5',
             catagory: 'lorem',
             image: '/images/product-5.jpg',
             price: 3,
@@ -57,7 +57,7 @@ export default {
         },
         {
             _id: '6',
-            name: 'Lorem ipsum dolor sit amet.',
+            name: 'Lorem ipsum dolor sit amet.product_6',
             catagory: 'lorem',
             image: '/images/product-6.jpg',
             price: 8,
