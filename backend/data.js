@@ -20,7 +20,7 @@ export default {
             brand: 'ipsumLM',
             rating: 3.5,
             numReviws:90,
-            countInStock: 6
+            countInStock: 77
         },
         {
             _id: '3',
@@ -31,7 +31,7 @@ export default {
             brand: 'ipsumLM',
             rating: 2.5,
             numReviws:18,
-            countInStock: 6
+            countInStock: 3
         },
         {
             _id: '4',
@@ -42,7 +42,7 @@ export default {
             brand: 'ipsumLM',
             rating: 4.5,
             numReviws:57,
-            countInStock: 6
+            countInStock: 0
         },
         {
             _id: '5',
@@ -53,7 +53,7 @@ export default {
             brand: 'ipsumLM',
             rating: 5,
             numReviws:43,
-            countInStock: 6
+            countInStock: 0
         },
         {
             _id: '6',
