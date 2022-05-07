@@ -20,7 +20,7 @@ userRouter.get('/createadmin', expressAsyncHandler (async (req, res) => {
     }
 })
 );
-
+//  for signin
 userRouter.post('/signin', expressAsyncHandler (async (req, res) => {
     const signInUser = await User.findOne({
         email: req.body.email,
@@ -37,6 +37,30 @@ userRouter.post('/signin', expressAsyncHandler (async (req, res) => {
             email: signInUser.email,
             isAdmin: signInUser.isAdmin,
             tken: generateToken(signInUser),
+        });
+    }
+})
+);
+
+// for register
+userRouter.post('/register', expressAsyncHandler (async (req, res) => {
+    const user = new User({
+        name: req.body.name,
+        email: req.body.email,
+        password: req.body.password,
+    });
+    const createdUser = await user.save();
+    if (!createdUser) {
+        res.status(401).send({
+            message: 'Invalid User Data',
+        });
+    }else{
+        res.send ({
+            _id: createdUser._id,
+            name: createdUser.name,
+            email: createdUser.email,
+            isAdmin: createdUser.isAdmin,
+            tken: generateToken(createdUser),
         });
     }
 })
