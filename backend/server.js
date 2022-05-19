@@ -5,6 +5,7 @@ import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import config from "./config.js";
 import userRouter from "./routers/userRouter.js";
+import orderRouter from "./routers/orderRouter.js";
 
 // for mongodb conection
 mongoose
@@ -28,6 +29,8 @@ app.use(bodyParser.json());
 
 // for admin router
 app.use('/api/users', userRouter);
+// 
+app.use('/api/orders', orderRouter);
 
 // for product
 app.get("/api/products", (req, res) =>{
